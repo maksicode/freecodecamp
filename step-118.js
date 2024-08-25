@@ -1,7 +1,7 @@
 const character = "!";
 const count = 12;
 const rows = [];
-let inverted = false;
+let inverted = true;
 
 function padRow(rowNumber, rowCount) {
     return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
@@ -15,7 +15,7 @@ function padRow(rowNumber, rowCount) {
     }
   }
   
-  let result = ""
+  let result = "";
   
   for (const row of rows) {
     result = result + "\n" + row;
